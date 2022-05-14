@@ -1,0 +1,155 @@
+.contact-container {
+  background-color: var(--primary-orange);
+  color: white;
+  max-width: 80%;
+  margin: 3rem auto;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  border: var(--red-border);
+}
+
+.contact-container h1 {
+  background-color: var(--accent-green);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.contact-container li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.contact-container li:hover {
+  cursor: pointer;
+  filter: drop-shadow(3px 3px 3px hsla(0, 0%, 0%, 0.25));
+}
+
+.contact-container li img {
+  max-width: 15%;
+  margin: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(1px 1px 1px hsla(0, 0%, 0%, 0.25));
+}
+
+.blog-suggestions {
+  max-width: 80%;
+  background-color: var(--primary-orange);
+  border-radius: 1.5rem;
+  border: var(--red-border);
+  padding: 2rem;
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.blog-suggestions h1 {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--accent-green);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-suggestions p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.blog-suggestions form {
+  display: flex;
+  flex-direction: column;
+  min-width: 80%;
+}
+
+.blog-suggestions textarea {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  height: 20rem;
+  padding: 1rem;
+}
+
+input[type="text"] {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.blog-suggestions [type="submit"] {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: var(--accent-green);
+  font-weight: bold;
+  box-shadow: (2px, 2px, 2px hsla(0, 0%, 0%, 0.5));
+}
+
+.blog-suggestions input[type="submit"]:hover {
+  cursor: pointer;
+  box-shadow: (3px, 3px, 3px hsla(0, 0%, 0%, 0.75));
+}
+
+@media (min-width: 768px) {
+  .contact-container h1 {
+    font-size: 3rem;
+  }
+
+  .contact-container li {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .blog-suggestions h1 {
+    font-size: 3rem;
+  }
+
+  .blog-suggestions p {
+    font-size: 2rem;
+  }
+
+  .blog-suggestions input[type="submit"] {
+    font-size: 1.5rem;
+    width: 65%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-container,
+  .blog-suggestions {
+    width: 65%;
+  }
+
+  .blog-suggestions input[type="submit"] {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact-container,
+  .blog-suggestions {
+    width: 50%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .contact-container,
+  .blog-suggestions {
+    width: 30%;
+  }
+}

@@ -1,0 +1,109 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(254, 240, 230, 0.25);
+  backdrop-filter: blur(1px);
+  z-index: 600;
+}
+
+.overlay:hover {
+  cursor: pointer;
+}
+
+.read-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem;
+  margin: auto;
+  z-index: 1000;
+  display: block;
+  text-align: center;
+  max-height: 80%;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: var(--primary-orange);
+  border-radius: 1.5rem;
+  max-width: 90%;
+}
+
+.close-btn {
+  z-index: 1000;
+  max-width: 8%;
+  filter: drop-shadow(1px 1px 1px hsla(0, 0%, 0%, 0.5));
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  margin-top: 3rem;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px hsla(0, 0%, 0%, 0.5));
+}
+
+h1 {
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+h1,
+p,
+ul,
+li,
+h3 {
+  color: white;
+}
+
+h1,
+p,
+ul {
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+ul {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .close-btn {
+    max-width: 5%;
+  }
+
+  .read-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .read-container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .read-container {
+    padding: 8rem;
+    max-width: 80%;
+    overflow: hidden;
+  }
+
+  .read-container li,
+  p {
+    font-size: 1.2rem;
+  }
+
+  .read-container h3 {
+    font-size: 1.5rem;
+  }
+}

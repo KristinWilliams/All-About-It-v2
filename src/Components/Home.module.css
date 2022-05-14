@@ -1,0 +1,394 @@
+.mobile-menu {
+  position: fixed;
+  background-color: var(--primary-orange);
+  z-index: 200;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  max-width: 60%;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 4px 4px 4px hsla(0, 0%, 0%, 0.25);
+}
+
+.close-icon {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 20%;
+}
+
+.mobile-menu li {
+  margin-top: 1.5rem;
+  list-style: none;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.mobile-menu li img {
+  margin-left: 1rem;
+  width: 15%;
+  filter: drop-shadow(1px 1px 1px hsla(0, 0%, 0%, 0.25));
+}
+
+.mobile-menu li:hover {
+  cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(1px 1px 1px hsla(0, 0%, 0%, 0.25));
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(254, 240, 230, 0.25);
+  backdrop-filter: blur(1px);
+}
+
+.nav {
+  background-color: var(--primary-orange);
+  display: flex;
+  padding: 1rem;
+}
+
+.desktop-nav {
+  visibility: hidden;
+}
+
+.menu-icon,
+.close-icon {
+  filter: drop-shadow(1px 1px 1px hsla(0, 0%, 0%, 0.75));
+}
+
+.menu-icon:hover,
+.close-icon:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px hsla(0, 0%, 0%, 0.5));
+}
+
+.logo-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-nav-hidden {
+  visibility: hidden;
+}
+
+.ebook,
+.book-container {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-orange);
+  margin: 3rem auto;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  border: var(--red-border);
+  position: relative;
+}
+
+.ebook-header,
+.book-title {
+  background-color: var(--bg-beige);
+  text-align: center;
+  border: var(--red-border);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: var(--accent-red);
+  font-weight: bold;
+  font-size: var(--book-headers);
+  margin-bottom: 2rem;
+}
+
+.book-title {
+  text-transform: capitalize;
+}
+
+#free {
+  color: var(--accent-green);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.ebook-cover,
+.book-cover {
+  box-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.25);
+  max-width: 65%;
+  margin: auto;
+}
+
+.ebook-btn,
+.buy-btn,
+.read-more {
+  background-color: var(--accent-green);
+  color: white;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: var(--btn-headers);
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.ebook-btn:hover,
+.buy-btn:hover,
+.read-more:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.25);
+}
+
+.grab-header {
+  background-color: var(--accent-green);
+  color: white;
+  text-align: center;
+  max-width: 80%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: var(--book-headers);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: var(--primary-orange);
+  display: flex;
+  position: sticky;
+  top: 100%;
+}
+
+.footer-desktop {
+  display: none;
+}
+
+.footer-logo {
+  margin: auto;
+}
+
+@media (min-width: 425px) {
+  .mobile-menu {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .close-icon {
+    padding-top: 3rem;
+    width: 15%;
+  }
+  .mobile-menu li {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .mobile-menu li img {
+    width: 12%;
+  }
+
+  .ebook,
+  .book-container {
+    margin-bottom: 5rem;
+  }
+
+  .ebook-cover,
+  .book-cover {
+    max-width: 50%;
+  }
+
+  .grab-header {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .desktop-nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .nav li {
+    color: white;
+    list-style: none;
+    font-size: 2rem;
+  }
+
+  .nav li:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .ebook,
+  .book-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ebook {
+    margin-top: 7rem;
+    grid-template-areas:
+      "eheader ecover"
+      "ebutton ecover";
+  }
+  .ebook-header {
+    grid-area: eheader;
+  }
+
+  .ebook-cover {
+    max-width: 80%;
+    grid-area: ecover;
+  }
+
+  .ebook-btn {
+    grid-area: ebutton;
+  }
+
+  .book-container {
+    grid-template-areas:
+      "header cover"
+      "buy cover"
+      "read-more cover";
+  }
+  .book-cover {
+    max-width: 80%;
+  }
+
+  .book-title {
+    grid-area: header;
+  }
+
+  .book-cover {
+    grid-area: cover;
+  }
+
+  .buy-btn {
+    grid-area: buy;
+  }
+
+  .read-more {
+    grid-area: read-more;
+  }
+
+  .footer {
+    margin-top: 7rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .footer-desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer li {
+    display: flex;
+    list-style: none;
+    color: white;
+    align-items: center;
+    filter: drop-shadow(1px 1px 1px hsla(0, 0%, 0%, 0.5));
+  }
+
+  .footer li:hover {
+    cursor: pointer;
+  }
+
+  .footer li img {
+    width: 2.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ebook,
+  .book-container {
+    max-width: 70%;
+    margin-bottom: 8rem;
+    padding: 4rem;
+  }
+  .ebook-cover,
+  .book-cover {
+    max-width: 70%;
+  }
+  .ebook-header,
+  .book-title {
+    margin: auto;
+    padding: 5rem;
+    margin-left: 4rem;
+  }
+
+  .ebook-btn {
+    margin-left: 4rem;
+  }
+
+  .grab-header {
+    max-width: 70%;
+    padding: 3rem;
+    margin-bottom: 8rem;
+  }
+
+  .buy-btn,
+  .read-more {
+    margin-left: 4rem;
+    max-height: 70%;
+  }
+
+  .footer {
+    font-size: 1.5rem;
+  }
+
+  .footer-desktop {
+    justify-content: space-evenly;
+  }
+
+  .footer-logo {
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .logo-nav {
+    margin-left: 3rem;
+  }
+  .nav li {
+    font-size: 2.5rem;
+  }
+  .desktop-nav {
+    justify-content: space-evenly;
+  }
+  .ebook,
+  .book-container {
+    max-width: 50%;
+  }
+
+  .ebook-btn {
+    max-height: 60%;
+  }
+
+  .grab-header {
+    max-width: 50%;
+    padding: 9rem;
+  }
+
+  .footer-desktop {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
+  .footer li {
+    font-size: 1.8rem;
+  }
+}
