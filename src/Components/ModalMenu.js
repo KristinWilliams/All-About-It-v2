@@ -5,10 +5,10 @@ import { NavLink } from "react-router-dom";
 const ModalMenu = ({ closeModal }) => {
   return (
     <>
-      <div className={HomeCss["mobile-menu"]}>
+      <div className={"mobile-menu"}>
         <img
           src="img/Menu.svg"
-          className={HomeCss["close-icon"]}
+          className={"close-icon"}
           onClick={() => closeModal(false)}
         />
         <ul>
@@ -34,7 +34,7 @@ const ModalMenu = ({ closeModal }) => {
           </li>
         </ul>
       </div>
-      <div className={HomeCss.overlay} onClick={() => closeModal(false)}></div>
+      <div className="overlay" onClick={() => closeModal(false)}></div>
     </>
   );
 };

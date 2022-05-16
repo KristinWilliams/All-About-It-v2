@@ -8,14 +8,14 @@ const Navbar = function () {
   return (
     <>
       {openMenu ? <ModalMenu closeModal={setOpenMenu} /> : null}
-      <div className={HomeCss.nav}>
+      <div className="nav">
         <img
           src="img/Menu.svg"
-          className={HomeCss["menu-icon"]}
+          className={"menu-icon"}
           onClick={() => setOpenMenu(true)}
         />
-        <img src="img/All-about-it-logo.svg" className={HomeCss["logo-nav"]} />
-        <ul className={HomeCss["desktop-nav"]}>
+        <img src="img/All-about-it-logo.svg" className="logo-nav" />
+        <ul className="desktop-nav">
           <li>
             <NavLink to="/" activeclassname="active">
               Books
