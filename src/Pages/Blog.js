@@ -4,7 +4,7 @@ import BlogCss from "../Components/Blog.module.css";
 import Post from "../Components/Post";
 
 const api = axios.create({
-  baseURL: "http://localhost:1337/api/articles",
+  baseURL: "https://all-about-it.herokuapp.com/api/articles",
 });
 
 class Blog extends React.Component {
@@ -36,7 +36,7 @@ class Blog extends React.Component {
                   <h2>{post.attributes.Title}</h2>
                   <img
                     className={BlogCss["post-img"]}
-                    src={`http://localhost:1337${post.attributes.img.data.attributes.formats.thumbnail.url}`}
+                    src={`https://all-about-it.herokuapp.com${post.attributes.img.data.attributes.formats.thumbnail.url}`}
                   />
                 </div>
                 <div>

@@ -3,7 +3,7 @@ import PostCss from "./Post.module.css";
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:1337/api/articles",
+  baseURL: "https://all-about-it.herokuapp.com/api/articles",
 });
 
 class Post extends React.Component {
@@ -22,7 +22,7 @@ class Post extends React.Component {
         <h1>{this.props.title}</h1>
         <img
           className={PostCss["post-img"]}
-          src={`http://localhost:1337${this.props.img}`}
+          src={`https://all-about-it.herokuapp.com${this.props.img}`}
         />
         <p>{this.props.content}</p>
         <div className={PostCss["clock-date"]}>
