@@ -20,7 +20,6 @@ class Blog extends React.Component {
     super();
     api.get("?populate=img").then((res) => {
       this.setState({ posts: res.data.data });
-      console.log(res.data.data);
     });
   }
 
