@@ -20,10 +20,7 @@ class Post extends React.Component {
           onClick={() => this.props.backBtn()}
         />
         <h1>{this.props.title}</h1>
-        <img
-          className={PostCss["post-img"]}
-          src={`https://all-about-it.herokuapp.com${this.props.img}`}
-        />
+        <img className={PostCss["post-img"]} src={this.props.img} />
         <p>{this.props.content}</p>
         <div className={PostCss["clock-date"]}>
           <img src="img/Blog-Clock-icon.svg" />
