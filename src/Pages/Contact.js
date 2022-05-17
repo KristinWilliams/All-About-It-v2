@@ -30,10 +30,7 @@ const Contact = () => {
           Do you have a topic you like us to discuss on the blog? Type your
           suggestions here!
         </p>
-        <form
-          action="https://formsubmit.co/f3b581089c7cd051c819e333aaecffa3"
-          method="POST"
-        >
+        <form name="contact" data-netlify="true" method="POST">
           <textarea
             name="comment"
             className={ContactCss["contact-form"]}
