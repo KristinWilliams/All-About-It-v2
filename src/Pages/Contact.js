@@ -46,7 +46,7 @@ const Contact = () => {
             placeholder="Name (optional)"
             className={ContactCss.name}
           />
-          <input type="submit" value="Submit" />
+          <button type="submit">Submit</button>
         </form>
       </div>
     </div>
