@@ -31,7 +31,7 @@ const Contact = () => {
           suggestions here!
         </p>
         <form name="contact" data-netlify="true" method="POST">
-          <input type="hidden" name="form-name" value="contact-form" />
+          <input type="hidden" name="form-name" value="contact" />
           <textarea
             name="comment"
             className={ContactCss["contact-form"]}
