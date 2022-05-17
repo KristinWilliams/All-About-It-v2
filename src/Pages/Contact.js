@@ -31,7 +31,7 @@ const Contact = () => {
           suggestions here!
         </p>
         <form
-          action="https://formsubmit.co/marketing@allaboutitpublishing.com"
+          action="https://formsubmit.co/f3b581089c7cd051c819e333aaecffa3"
           method="POST"
         >
           <textarea
