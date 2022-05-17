@@ -27,25 +27,14 @@
     <title>All About It</title>
   </head>
   <body>
-    <form
-      name="contact"
-      netlify
-      netlify-honeypot="bot-field"
-      action="/"
-      hidden
-    >
-    <textarea
-    name="comment"
-    className={ContactCss["contact-form"]}
-    placeholder="Type your comment..."
-    required
-  ></textarea>
-  <input
-    type="text"
-    name="name"
-    placeholder="Name (optional)"
-    className={ContactCss.name}
-  /></form>
+    <form name="contact" netlify netlify-honeypot="bot-field" action="/" hidden>
+      <textarea
+        name="comment"
+        placeholder="Type your comment..."
+        required
+      ></textarea>
+      <input type="text" name="name" placeholder="Name (optional)" />
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
