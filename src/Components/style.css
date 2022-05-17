@@ -119,3 +119,61 @@ body {
 .menu-nav-hidden {
   visibility: hidden;
 }
+
+@media (min-width: 425px) {
+  .mobile-menu {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .close-icon {
+    padding-top: 3rem;
+    width: 15%;
+  }
+  .mobile-menu li {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .mobile-menu li img {
+    width: 12%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .desktop-nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .nav li {
+    color: white;
+    list-style: none;
+    font-size: 2rem;
+  }
+
+  .nav li:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 2560px) {
+  .logo-nav {
+    margin-left: 3rem;
+  }
+  .nav li {
+    font-size: 2.5rem;
+  }
+  .desktop-nav {
+    justify-content: space-evenly;
+  }
+}
