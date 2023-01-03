@@ -4,7 +4,7 @@ import BlogCss from "../Components/Blog.module.css";
 import Post from "../Components/Post";
 
 const api = axios.create({
-  baseURL: "https://all-about-it.herokuapp.com/api/articles",
+  baseURL: "http://localhost:1337/api/posts",
 });
 
 class Blog extends React.Component {
