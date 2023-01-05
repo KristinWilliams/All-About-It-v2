@@ -4,7 +4,7 @@ import BlogCss from "../Components/Blog.module.css";
 import Post from "../Components/Post";
 
 const api = axios.create({
-  baseURL: "http://localhost:1337/api/posts",
+  baseURL: "https://lobster-app-flfvo.ondigitalocean.app/api/articles",
 });
 
 class Blog extends React.Component {

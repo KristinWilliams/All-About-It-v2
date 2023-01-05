@@ -3,7 +3,7 @@ import PostCss from "./Post.module.css";
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://all-about-it.herokuapp.com/api/articles",
+  baseURL: "https://lobster-app-flfvo.ondigitalocean.app/api/articles",
 });
 
 class Post extends React.Component {
